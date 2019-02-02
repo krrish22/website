@@ -18,7 +18,8 @@ steps:
 
 - script: sudo apt-get install "libboost-all-dev" -y
   displayName: 'packageinstaller'
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
+- script: echo "BuildNumber:$(Build.BuildNumber)" > readme.txt
+          #echo "BUILD NUMBER: $Build.BuildNumber" >> readme.txt
+                #echo Add other tasks to build, test, and deploy your project.
+                  #echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
