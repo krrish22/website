@@ -13,6 +13,11 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+- script: sudo apt-get update
+  displayName: 'updatenew'
+
+- script: sudo apt-get install "libboost-all-dev" -y
+  displayName: 'packageinstaller'
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
